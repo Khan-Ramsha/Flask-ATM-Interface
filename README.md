@@ -21,12 +21,13 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
 
 1. **Clone the Repository**:
     ```
-    git clone https://github.com/yourusername/atm-interface.git
+    git clone https://github.com/Khan-Ramsha/Flask-ATM-Interface.git
+
     ```
 
 2. **Navigate to the Project Directory**:
     ```
-    cd atm-interface
+    cd Flask-ATM-Interface
     ```
 
 
