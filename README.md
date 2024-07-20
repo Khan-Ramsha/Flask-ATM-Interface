@@ -58,5 +58,6 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
   - `withdraw.html`: Withdraw money page.
   - `balance.html`: Check balance page.
   - `change_password.html`: Change password page.
+  - `message.html`: Displays the operation successfully completed.
 
 ## Contributing
