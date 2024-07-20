@@ -40,7 +40,7 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
 
 1. **Run the Flask Application**:
     ```
-    python main.py
+    python app.py
     ```
 
 2. **Open Your Web Browser** and navigate to `http://127.0.0.1:5000` to access the ATM interface.
