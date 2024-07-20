@@ -49,7 +49,7 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
 
 ## File Structure 🗂️
 
-- `main.py`: Entry point of the application, handles routing and rendering of pages.
+- `app.py`: Entry point of the application, handles routing and rendering of pages.
 - `components/atm.py`: Contains the `ATM` class with methods for ATM operations.
 - `components/verify_user.py`: Contains the `Verify` class for user verification.
 - `templates/`: Contains HTML files for the web interface.
