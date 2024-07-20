@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+</head>
+<body>
+    <h1>Balance</h1>
+    <form method="post" action="{{ url_for('balance') }}">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Check Balance</button>
+    </form>
+    {% if balance %}
+    <p>Current balance: {{ balance }}</p>
+    {% endif %}
+</body>
+</html>
