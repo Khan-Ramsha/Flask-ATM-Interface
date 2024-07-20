@@ -1,23 +1,23 @@
-# ATM Interface Using Python OOP
+# ATM Interface Using Python OOP  🏧💻
 
 ## Project Overview
 
 This project is an ATM interface implemented using Python and Flask, utilizing Object-Oriented Programming (OOP) principles. The application allows users to perform various operations such as depositing money, withdrawing money, checking their balance, and changing their password.
 
-## Features
+## Features ✨
 
-- **Deposit Money**: Add funds to your account.
-- **Withdraw Money**: Remove funds from your account.
-- **Check Balance**: View the current balance.
-- **Change Password**: Update the account password.
+- **Deposit Money**:  💵 Deposit money to your account.
+- **Withdraw Money**: 💸 Remove money from your account.
+- **Check Balance**: 💰 View the current balance.
+- **Change Password**:  🔒 Update the account password.
 
-## Technologies Used
+## Technologies Used 🛠️
 
 - **Python**: For core application logic and OOP implementation.
 - **Flask**: For creating the web interface.
 - **Bootstrap**: For UI styling and responsiveness.
 
-## Installation
+## Installation ⚙️
 
 1. **Clone the Repository**:
     ```
@@ -46,7 +46,7 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
 
 3. **Log In** using the last 4 digits of your card number and a 4-digit password. You can then perform various operations such as depositing or withdrawing money, checking your balance, and changing your password.
 
-## File Structure
+## File Structure 🗂️
 
 - `main.py`: Entry point of the application, handles routing and rendering of pages.
 - `components/atm.py`: Contains the `ATM` class with methods for ATM operations.
@@ -61,3 +61,6 @@ This project is an ATM interface implemented using Python and Flask, utilizing O
   - `message.html`: Displays the operation successfully completed.
 
 ## Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests for any improvements or feature requests. 🙌
+
