@@ -8,13 +8,19 @@ logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%(message)s:')
 
 
 list_of_files=[
-    # 'templates/change_pass.html',
-    # 'templates/check_bal.html',
-    # 'templates/deposit.html',
-    # 'templates/withdraw.html',
+    'templates/change_password.html',
+    'templates/balance.html',
+    'templates/deposit.html',
+    'templates/withdraw.html',
+    'templates/dashboard.html',
+    'templates/message.html',
+    'templates/withdraw.html',
+    
     'src/logger.py',
     'src/exception.py',
     'components/atm.py',
+    'components/verify_user.py',
+    
     'app.py',
     'requirements.txt',
 ]
