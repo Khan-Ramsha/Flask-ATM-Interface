@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <title>ATM Interface</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .btn-custom {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">ATM Interface</h1>
-        <form method="post" action="{{ url_for('home') }}">
-            <div class="form-group">
-                <label for="card_number">Card Number (Last 4 digits):</label>
-                <input type="text" class="form-control" id="card_number" name="card_number" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password (4 digits):</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
-        </form>
-        {% if error %}
-            <div class="alert alert-danger mt-3">{{ error }}</div>
-        {% endif %}
+        <div class="form-container">
+            <h2 class="text-center">ATM Login</h2>
+            <form method="post" action="{{ url_for('home') }}">
+                <div class="form-group">
+                    <label for="card_number" class="form-label">Card Number (Last 4 digits):</label>
+                    <input type="text" class="form-control" id="card_number" name="card_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password (4 digits):</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-custom">Login</button>
+            </form>
+            {% if error %}
+                <div class="alert alert-danger mt-3">{{ error }}</div>
+            {% endif %}
+        </div>
     </div>
 </body>
 </html>

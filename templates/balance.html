@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance</title>
+    <title>Check Balance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Balance</h1>
-    <form method="post" action="{{ url_for('balance') }}">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Check Balance</button>
-    </form>
-    {% if balance %}
-    <p>Current balance: {{ balance }}</p>
-    {% endif %}
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="text-center">Current Balance</h2>
+            <p class="text-center">{{ balance }}</p>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary btn-custom">Back to Dashboard</a>
+        </div>
+    </div>
 </body>
 </html>

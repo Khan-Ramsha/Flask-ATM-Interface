@@ -2,20 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit</title>
+    <title>Deposit Money</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .btn-custom {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Deposit</h1>
-    <form method="post" action="{{ url_for('deposit') }}">
-        <label for="amount">Amount:</label>
-        <input type="text" id="amount" name="amount" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Deposit</button>
-    </form>
-    {% if error %}
-    <p style="color: red;">{{ error }}</p>
-    {% endif %}
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="text-center">Deposit Money</h2>
+            <form method="post" action="{{ url_for('deposit') }}">
+                <div class="form-group">
+                    <label for="amount" class="form-label">Amount to Deposit:</label>
+                    <input type="text" class="form-control" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password (4 digits):</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-custom">Deposit</button>
+            </form>
+            {% if error %}
+                <div class="alert alert-danger mt-3">{{ error }}</div>
+            {% endif %}
+        </div>
+    </div>
 </body>
 </html>
